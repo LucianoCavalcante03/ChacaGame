@@ -1,0 +1,14 @@
+Bienvenido a The ChacaGame
+
+-----------------------
+
+version: Beta 0.0.2
+released: 16/11/2021
+autor: CaptainPapas #7227 (en Discord) o si me conoces del cole, Lucho de 6to 6ta (por lo menos hasta que termine el año).
+
+-----------------------
+
+Buenas, esta es la segunda version disponible del juego, por el momento titulado "The ChacaGame". Con jugabilidad simple, tan simple
+como puede ser moverse con las flechitas, el juego trata de....este...eeeeeh....ponele que trata de una papa que pasea por el bosque
+(algun dia tendra algo de historia seguro). Dejo esta version pública para todo aquel que quiera probarla, pero voy a ir actualizando
+el juego mediante vaya progresando, espero disfruten y tengan paciencia que se vienen cosas piolas!

@@ -1,0 +1,607 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://ejemplos/Action RPG Resources/World/GrassBackground.png" type="Texture" id=1]
+[ext_resource path="res://ejemplos/Action RPG Resources/World/Tree.png" type="Texture" id=2]
+[ext_resource path="res://ejemplos/Action RPG Resources/World/Bush.png" type="Texture" id=3]
+[ext_resource path="res://ejemplos/Action RPG Resources/World/Grass.png" type="Texture" id=4]
+[ext_resource path="res://Characters/The Potato.png" type="Texture" id=5]
+[ext_resource path="res://Characters/Player/player.gd" type="Script" id=6]
+[ext_resource path="res://AudioMusic/Violet City (STEREO).mp3" type="AudioStream" id=7]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 16, 16 )
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "dance"
+length = 0.9
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]
+}
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 16, 5 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16, 10 )
+
+[node name="nivel1" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 160, 64 )
+scale = Vector2( 1, 0.97561 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( -368, -288, 960, 656 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -6.118
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="grass" type="YSort" parent="YSort"]
+
+[node name="Grass3" type="Sprite" parent="YSort/grass"]
+position = Vector2( 93, 70 )
+texture = ExtResource( 4 )
+
+[node name="Grass4" type="Sprite" parent="YSort/grass"]
+position = Vector2( 120, 67 )
+texture = ExtResource( 4 )
+
+[node name="Grass5" type="Sprite" parent="YSort/grass"]
+position = Vector2( 186, 151 )
+texture = ExtResource( 4 )
+
+[node name="Grass6" type="Sprite" parent="YSort/grass"]
+position = Vector2( 239, 135 )
+texture = ExtResource( 4 )
+
+[node name="Grass7" type="Sprite" parent="YSort/grass"]
+position = Vector2( 75, 68 )
+texture = ExtResource( 4 )
+
+[node name="Grass8" type="Sprite" parent="YSort/grass"]
+position = Vector2( 84, 51 )
+texture = ExtResource( 4 )
+
+[node name="Grass9" type="Sprite" parent="YSort/grass"]
+position = Vector2( 61, 47 )
+texture = ExtResource( 4 )
+
+[node name="Grass10" type="Sprite" parent="YSort/grass"]
+position = Vector2( 74, 29 )
+texture = ExtResource( 4 )
+
+[node name="Grass12" type="Sprite" parent="YSort/grass"]
+position = Vector2( 32, -8 )
+texture = ExtResource( 4 )
+
+[node name="Grass13" type="Sprite" parent="YSort/grass"]
+position = Vector2( 8, 72 )
+texture = ExtResource( 4 )
+
+[node name="Grass14" type="Sprite" parent="YSort/grass"]
+position = Vector2( 32, 112 )
+texture = ExtResource( 4 )
+
+[node name="Grass15" type="Sprite" parent="YSort/grass"]
+position = Vector2( 80, 168 )
+texture = ExtResource( 4 )
+
+[node name="Grass16" type="Sprite" parent="YSort/grass"]
+position = Vector2( 152, 192 )
+texture = ExtResource( 4 )
+
+[node name="Grass17" type="Sprite" parent="YSort/grass"]
+position = Vector2( 240, 184 )
+texture = ExtResource( 4 )
+
+[node name="Grass18" type="Sprite" parent="YSort/grass"]
+position = Vector2( 248, 80 )
+texture = ExtResource( 4 )
+
+[node name="Grass19" type="Sprite" parent="YSort/grass"]
+position = Vector2( 232, 8 )
+texture = ExtResource( 4 )
+
+[node name="Grass20" type="Sprite" parent="YSort/grass"]
+position = Vector2( 152, 0 )
+texture = ExtResource( 4 )
+
+[node name="Grass21" type="Sprite" parent="YSort/grass"]
+position = Vector2( 216, -32 )
+texture = ExtResource( 4 )
+
+[node name="Grass22" type="Sprite" parent="YSort/grass"]
+position = Vector2( 272, -16 )
+texture = ExtResource( 4 )
+
+[node name="Grass23" type="Sprite" parent="YSort/grass"]
+position = Vector2( 328, 40 )
+texture = ExtResource( 4 )
+
+[node name="Grass24" type="Sprite" parent="YSort/grass"]
+position = Vector2( 352, 80 )
+texture = ExtResource( 4 )
+
+[node name="Grass25" type="Sprite" parent="YSort/grass"]
+position = Vector2( 328, 120 )
+texture = ExtResource( 4 )
+
+[node name="Grass26" type="Sprite" parent="YSort/grass"]
+position = Vector2( 328, 120 )
+texture = ExtResource( 4 )
+
+[node name="Grass11" type="Sprite" parent="YSort/grass"]
+position = Vector2( 105, 36 )
+texture = ExtResource( 4 )
+
+[node name="player" type="KinematicBody2D" parent="."]
+position = Vector2( 272, 128 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="player"]
+position = Vector2( -2.04376, 1 )
+scale = Vector2( 1.12774, 1.16667 )
+texture = ExtResource( 5 )
+hframes = 3
+vframes = 3
+frame = 1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="player"]
+autoplay = "dance"
+anims/RESET = SubResource( 3 )
+anims/dance = SubResource( 4 )
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+current = true
+
+[node name="Trees" type="YSort" parent="."]
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="Trees"]
+position = Vector2( 136, 32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D5"]
+position = Vector2( 0, -3 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Trees/StaticBody2D5"]
+position = Vector2( 0, -8 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D9" type="StaticBody2D" parent="Trees"]
+position = Vector2( -16, 32 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D9"]
+position = Vector2( 0, -3 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Trees/StaticBody2D9"]
+position = Vector2( 0, -8 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D10" type="StaticBody2D" parent="Trees"]
+position = Vector2( 64, -40 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D10"]
+position = Vector2( 0, -3 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Trees/StaticBody2D10"]
+position = Vector2( 0, -8 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D11" type="StaticBody2D" parent="Trees"]
+position = Vector2( 272, -64 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D11"]
+position = Vector2( 0, -3 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Trees/StaticBody2D11"]
+position = Vector2( 0, -8 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D12" type="StaticBody2D" parent="Trees"]
+position = Vector2( 416, 56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D12"]
+position = Vector2( 0, -3 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Trees/StaticBody2D12"]
+position = Vector2( 0, -8 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D13" type="StaticBody2D" parent="Trees"]
+position = Vector2( 400, 232 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D13"]
+position = Vector2( 0, -3 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Trees/StaticBody2D13"]
+position = Vector2( 0, -8 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D14" type="StaticBody2D" parent="Trees"]
+position = Vector2( 248, 272 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D14"]
+position = Vector2( 0, -3 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Trees/StaticBody2D14"]
+position = Vector2( 0, -8 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D15" type="StaticBody2D" parent="Trees"]
+position = Vector2( 120, 264 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D15"]
+position = Vector2( 0, -3 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Trees/StaticBody2D15"]
+position = Vector2( 0, -8 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="Trees"]
+position = Vector2( 40, 168 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D6"]
+position = Vector2( 0, -3 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Trees/StaticBody2D6"]
+position = Vector2( 0, -8 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="Trees"]
+position = Vector2( 80, 104 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D7"]
+position = Vector2( 0, -3 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Trees/StaticBody2D7"]
+position = Vector2( 0, -8 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="Trees"]
+position = Vector2( 168, 120 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D8"]
+position = Vector2( 0, -3 )
+shape = SubResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Trees/StaticBody2D8"]
+position = Vector2( 0, -8 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Trees"]
+position = Vector2( 280, 64 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D2"]
+position = Vector2( 0, 12 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree2" type="Sprite" parent="Trees/StaticBody2D2"]
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Trees"]
+position = Vector2( 208, 40 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D3"]
+position = Vector2( 0, 12 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree2" type="Sprite" parent="Trees/StaticBody2D3"]
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Trees"]
+position = Vector2( -72, 136 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D4"]
+position = Vector2( 0, 12 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree2" type="Sprite" parent="Trees/StaticBody2D4"]
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D16" type="StaticBody2D" parent="Trees"]
+position = Vector2( -80, -40 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D16"]
+position = Vector2( 0, 12 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree2" type="Sprite" parent="Trees/StaticBody2D16"]
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D17" type="StaticBody2D" parent="Trees"]
+position = Vector2( 168, -80 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D17"]
+position = Vector2( 0, 12 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree2" type="Sprite" parent="Trees/StaticBody2D17"]
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D18" type="StaticBody2D" parent="Trees"]
+position = Vector2( 344, -16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D18"]
+position = Vector2( 0, 12 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree2" type="Sprite" parent="Trees/StaticBody2D18"]
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D19" type="StaticBody2D" parent="Trees"]
+position = Vector2( 368, 168 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D19"]
+position = Vector2( 0, 12 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree2" type="Sprite" parent="Trees/StaticBody2D19"]
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D20" type="StaticBody2D" parent="Trees"]
+position = Vector2( 0, 264 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D20"]
+position = Vector2( 0, 12 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree2" type="Sprite" parent="Trees/StaticBody2D20"]
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D21" type="StaticBody2D" parent="Trees"]
+position = Vector2( 336, -128 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D21"]
+position = Vector2( 0, 12 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree2" type="Sprite" parent="Trees/StaticBody2D21"]
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D22" type="StaticBody2D" parent="Trees"]
+position = Vector2( 336, -128 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trees/StaticBody2D22"]
+position = Vector2( 0, 12 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tree2" type="Sprite" parent="Trees/StaticBody2D22"]
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
